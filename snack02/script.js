@@ -4,9 +4,10 @@
 // Seleziono l'elemento
 const ul = document.querySelector('ul.list');
 
-for ( let i = 1; i <= 5 ; i++){
+for ( let i = 1; i <= 10 ; i++){
 
-    const li = '<li class="box box${index}">${index}</li>';
+const li = i ;
     ul.innerHTML += li;
 
 }
+
