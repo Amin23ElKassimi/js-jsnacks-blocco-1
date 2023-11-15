@@ -9,6 +9,5 @@ for ( let i = 1; i <= 10 ; i++){
     const mol = i * 2;
     const li = '<li>' + mol + '</li>';
     ul.innerHTML += li;
-
 }
 
