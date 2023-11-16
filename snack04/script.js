@@ -6,8 +6,8 @@ const array = [];
 for ( let index = 0; index <= 100 ; index++){
     if (index % 7 === 0 || index % 8 === 0){
         array.push(index);
-        console.log(index);
     }
 }
+console.log(array);
 
-
+    
