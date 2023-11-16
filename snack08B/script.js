@@ -1,35 +1,30 @@
-// In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby 
-// (createlo voi con almeno 5 nomi), chiedi all'utente il suo nome e comunicagli se può partecipare o no alla festa.
 
+// Chiedi un numero di 7 cifre all'utente 
 
+const number = prompt('Inserisci un numero di 7 cifre');
 
-const newArray = [
-    "Amino",
-    "Riccardo",
-    "Giuseppe",
-    "Fraancesco",
-    "Giada",
-    "Gaia",
-   
-]
-let len = newArray.length;
+// e calcola la somma di tutte le cifre che compongono il numero.
+ 
+const Digit0Str = number.charAt(0);
+const Digit0Num = Number(Digit0Str);
+ 
+const Digit1Str = number.charAt(1);
+const Digit1Num = Number(Digit1Str);
 
-// ############## CLICK ##############
-const search = document.querySelector('#search');
-search.addEventListener('click',function() {
-let found = false ;
-        // --------------- FOR ---------------
-        for (var i = 0; i < len; i++) {
-            const email = document.getElementById("in-email");
+const Digit2Str = number.charAt(2);
+const Digit2Num = Number(Digit2Str);
 
-            if (email.value == newArray[i]) {
-                console.log("Nome trovato");
-                found = true ;
-            }
-        }
-        // --------------- IF ---------------
-        if (found == false) {
-            console.log("Nome non trovato");
-        }
+const Digit3Str = number.charAt(3);
+const Digit3Num = Number(Digit3Str);
 
-});
+const Digit4Str = number.charAt(4);
+const Digit4Num = Number(Digit4Str);
+
+const Digit5Str = number.charAt(5);
+const Digit5Num = Number(Digit5Str);
+
+const Digit6Str = number.charAt(6);
+const Digit6Num = Number(Digit6Str);
+
+const summResult = (Digit0Num + Digit1Num + Digit2Num + Digit3Num + Digit4Num + Digit5Num + Digit6Num);
+console.log(summResult);
