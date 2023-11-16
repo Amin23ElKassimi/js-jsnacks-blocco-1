@@ -1,35 +1,17 @@
-// In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby 
-// (createlo voi con almeno 5 nomi), chiedi all'utente il suo nome e comunicagli se può partecipare o no alla festa.
+// Chiedi all'utente due numeri,
+//  uno piu' piccolo (due cifre)
+//   e uno piu' grande (almeno quattro cifre):
+let number1 = parseInt(prompt('Inserisci un numero di 2 cifre'));
+let number2 = parseInt(prompt('Inserisci un numero di 4 cifre'));
 
 
+//    moltiplica il primo numero per 2 finche'
+//     non arriva ad essere maggiore del secondo numero.
+//      21        2001
+// ( ! negazione (number1 > number2) condizione che si vuole raggiungere) oppure   (number1 < number2) 
+while (!(number1 > number2)) {
+    number1 = number1 * 2;
+}
+console.log(number1);
+console.log(number2);
 
-const newArray = [
-    "Amino",
-    "Riccardo",
-    "Giuseppe",
-    "Fraancesco",
-    "Giada",
-    "Gaia",
-   
-]
-let len = newArray.length;
-
-// ############## CLICK ##############
-const search = document.querySelector('#search');
-search.addEventListener('click',function() {
-let found = false ;
-        // --------------- FOR ---------------
-        for (var i = 0; i < len; i++) {
-            const email = document.getElementById("in-email");
-
-            if (email.value == newArray[i]) {
-                console.log("Nome trovato");
-                found = true ;
-            }
-        }
-        // --------------- IF ---------------
-        if (found == false) {
-            console.log("Nome non trovato");
-        }
-
-});
